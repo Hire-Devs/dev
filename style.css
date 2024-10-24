@@ -91,7 +91,7 @@ header {
 .cta-button {
     background-color: #61dafb;
     color: #282c34;
-    padding: 15px 30px;
+    padding: 10px 25px;
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
@@ -99,7 +99,8 @@ header {
 }
 
 .cta-button:hover {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: #282c34;
+    color: #61dafb;
 }
 
 /* Features Section */
@@ -139,7 +140,7 @@ header {
 .feature h3 {
     font-size: 22px;
     margin-bottom: 10px;
-    color: #61dafb;
+    color: rgba(0, 0, 0, 0.7);
 }
 
 .feature p {
@@ -220,7 +221,7 @@ header {
 
 .pricing-card h3 {
     font-size: 22px;
-    color: #61dafb;
+    color: rgba(0, 0, 0, 0.7);
 }
 
 .pricing-card p {
@@ -231,7 +232,7 @@ header {
 .pricing-card span {
     font-size: 28px;
     font-weight: bold;
-    color: #61dafb;
+    color: rgba(0, 0, 0, 0.7);
 }
 
 /* Footer */
