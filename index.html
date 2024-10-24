@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dev Bot - Home</title>
+    <title>Dev Bot</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navbar -->
@@ -16,19 +19,21 @@
             <li><a href="#commands">Commands</a></li>
             <li><a href="#pricing">Pricing</a></li>
             <li><a href="#login">Login</a></li>
-            <li><a href="#invite">Invite Bot</a></li>
+            <li><a href="#invite" class="cta-button">Invite Bot</a></li>
         </ul>
     </nav>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <h1>Welcome to Dev Bot</h1>
-        <p>Manage developers with ease and efficiency.</p>
-        <a href="#invite" class="cta-button">Invite the Bot</a>
+        <div class="hero-content">
+            <h1>Welcome to Dev Bot</h1>
+            <p>Effortlessly manage developers and projects in Discord.</p>
+            <a href="#invite" class="cta-button">Invite the Bot</a>
+        </div>
     </section>
 
     <!-- Features Section -->
-    <section id="features">
+    <section id="features" class="features-section">
         <h2>Features</h2>
         <div class="features-container">
             <div class="feature">
@@ -42,6 +47,44 @@
             <div class="feature">
                 <h3>Hire Requests</h3>
                 <p>Send and confirm hire requests seamlessly through Discord.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Commands Section -->
+    <section id="commands" class="commands-section">
+        <h2>Bot Commands</h2>
+        <div class="commands-container">
+            <div class="command">
+                <h4>/profile</h4>
+                <p>View your developer profile.</p>
+            </div>
+            <div class="command">
+                <h4>/topdevs</h4>
+                <p>See the top developers in the server.</p>
+            </div>
+            <div class="command">
+                <h4>/hire</h4>
+                <p>Request to hire a developer.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing-section">
+        <h2>Pricing Plans</h2>
+        <div class="pricing-container">
+            <div class="pricing-card">
+                <h3>Free</h3>
+                <p>Basic features for individuals.</p>
+                <span>Free</span>
+                <a href="#" class="cta-button">Get Started</a>
+            </div>
+            <div class="pricing-card">
+                <h3>Pro</h3>
+                <p>Advanced features for teams.</p>
+                <span>$10/month</span>
+                <a href="#" class="cta-button">Get Started</a>
             </div>
         </div>
     </section>
