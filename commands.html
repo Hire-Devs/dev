@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bot Commands - Dev Bot</title>
+    <link rel="stylesheet" href="commands.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">Dev Bot</div>
+        <ul>
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="index.html#features">Features</a></li>
+            <li><a href="index.html#commands" class="active">Commands</a></li>
+            <li><a href="index.html#pricing">Pricing</a></li>
+            <li><a href="index.html#login">Login</a></li>
+            <li><a href="index.html#invite" class="cta-button">Invite Bot</a></li>
+        </ul>
+    </nav>
+
+    <!-- Documentation Section -->
+    <main class="documentation">
+        <h1>Bot Documentation</h1>
+        <p>Here is the complete guide on how to use the bot and its features:</p>
+
+        <!-- Profile Management -->
+        <section class="command-section">
+            <h2>Profile Management</h2>
+
+            <div class="command-item">
+                <h3>Create a Profile</h3>
+                <code>/createprofile &lt;name&gt; &lt;experience&gt; &lt;skills&gt;</code>
+                <p>Creates your developer profile with name, experience (in years), and a list of skills separated by commas.</p>
+                <p><strong>Example:</strong> /createprofile John 5 Python, JavaScript, SQL</p>
+            </div>
+
+            <div class="command-item">
+                <h3>Delete a Profile</h3>
+                <code>/deleteprofile</code>
+                <p>Deletes your developer profile. You must have a profile to delete.</p>
+            </div>
+
+            <div class="command-item">
+                <h3>Update a Profile</h3>
+                <p>To update your profile, delete it first using <code>/deleteprofile</code>, then create a new one using <code>/createprofile</code>.</p>
+            </div>
+        </section>
+
+        <!-- Request & Hiring Developers -->
+        <section class="command-section">
+            <h2>Request & Hiring Developers</h2>
+
+            <div class="command-item">
+                <h3>Request Developer Help</h3>
+                <code>/requesthelp &lt;developer_name&gt;</code>
+                <p>Request help from a specific developer by their name. The developer will receive a message in their DM and can choose to accept the request.</p>
+                <p><strong>Example:</strong> /requesthelp John</p>
+            </div>
+
+            <div class="command-item">
+                <h3>Confirm a Hire</h3>
+                <code>/hiredev &lt;developer_name&gt;</code>
+                <p>After a developer agrees to work with you, confirm the hire using this command. It will mark the developer as unavailable until the work is completed.</p>
+                <p><strong>Example:</strong> /hiredev John</p>
+            </div>
+
+            <div class="command-item">
+                <h3>Confirm Work Completion</h3>
+                <code>/confirmwork &lt;hiring_user_name&gt;</code>
+                <p>Once the developer completes the work, confirm it using this command. This will mark the developer as available again and increase their work count.</p>
+                <p><strong>Example:</strong> /confirmwork user</p>
+            </div>
+        </section>
+
+        <!-- View Developers -->
+        <section class="command-section">
+            <h2>View Developers</h2>
+
+            <div class="command-item">
+                <h3>Top Developers</h3>
+                <code>/topdevelopers</code>
+                <p>View a list of the top 10 developers sorted by the number of completed projects. You can see their name, experience, skills, and work completed.</p>
+            </div>
+        </section>
+
+        <!-- Help and Documentation -->
+        <section class="command-section">
+            <h2>Help and Documentation</h2>
+
+            <div class="command-item">
+                <h3>Help</h3>
+                <code>/help</code>
+                <p>Displays a list of commands that are available with short descriptions.</p>
+            </div>
+
+            <div class="command-item">
+                <h3>Docs</h3>
+                <code>/docs</code>
+                <p>Shows this detailed guide with all the available bot features and how to use them.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Dev Bot. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://discord.gg/yourserver">Discord</a>
+            <a href="https://github.com/pgnetwork01">GitHub</a>
+        </div>
+    </footer>
+</body>
+</html>
