@@ -112,7 +112,7 @@ header {
 
 .features-section h2 {
     margin-bottom: 40px;
-    color: #fff;
+    color: rgba(0, 0, 0, 0.7);
 }
 
 .features-container {
@@ -146,7 +146,7 @@ header {
 
 .feature p {
     font-size: 16px;
-    color: #fff;
+    color: rgba(0, 0, 0, 0.7);
 }
 
 /* Commands Section */
@@ -186,54 +186,6 @@ header {
 .command p {
     font-size: 14px;
     color: #fff;
-}
-
-/* Pricing Section */
-.pricing-section {
-    padding: 60px 20px;
-    text-align: center;
-}
-
-.pricing-section h2 {
-    margin-bottom: 40px;
-    color: #fff;
-}
-
-.pricing-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.pricing-card {
-    width: 30%;
-    min-width: 250px;
-    background: rgba(255, 255, 255, 0.1);
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    margin: 10px;
-    transition: transform 0.3s;
-}
-
-.pricing-card:hover {
-    transform: scale(1.05);
-}
-
-.pricing-card h3 {
-    font-size: 22px;
-    color: rgba(0, 0, 0, 0.7);
-}
-
-.pricing-card p {
-    font-size: 16px;
-    color: #fff;
-}
-
-.pricing-card span {
-    font-size: 28px;
-    font-weight: bold;
-    color: rgba(0, 0, 0, 0.7);
 }
 
 /* Footer */
