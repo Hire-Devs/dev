@@ -284,25 +284,24 @@ nav ul {
     nav ul {
     display: none;
     flex-direction: column;
-    justify-content: flex-start; /* Align items at the top */
-    align-items: flex-start;     /* Align items to the left */
+    justify-content: flex-start;
+    align-items: flex-start;
     position: fixed;
     top: 0;
-    left: -50%; /* Start hidden, off-screen */
+    right: -50%; /* Initially hidden off the left side of the screen */
     width: 50%; /* Sidebar width */
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.9); /* Dark background for sidebar */
-    transition: left 0.3s ease; /* Smooth sliding transition */
+    height: 100vh; /* Full height of the viewport */
+    background-color: #222; /* Dark gray background */
+    transition: left 0.3s ease; /* Smooth slide-in transition */
     z-index: 1000;
     padding: 15px 30px;
-    box-shadow: 4px 0 20px rgba(0, 0, 0, 0.5);
+    box-shadow: 4px 0 20px rgba(0, 0, 0, 0.5); /* Optional shadow */
 }
 
 nav ul.show {
     display: flex;
-    left: 0; /* Bring the sidebar into view */
+    right: 0; /* When active, the sidebar is visible */
 }
-
 
     nav .hamburger {
         display: block;
