@@ -24,7 +24,7 @@ body {
     transition: background-color 0.3s;
 }
 
-.cta-button:hover {
+.lta-button:hover {
     background-color: #61dafb;
     color: #282c34;
 }
