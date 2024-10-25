@@ -269,3 +269,38 @@ footer .social-links a {
         font-size: 1.25rem;
     }
 }
+
+nav .hamburger {
+    display: none;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+nav ul {
+    transition: all 0.3s ease;
+}
+
+@media only screen and (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.8);
+        position: absolute;
+        top: 70px;
+        left: 0;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    nav .hamburger {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+}
+
