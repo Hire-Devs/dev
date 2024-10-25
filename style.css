@@ -293,8 +293,22 @@ nav ul {
     }
 
     nav ul.show {
-        display: flex;
-    }
+    display: flex;
+    flex-direction: column; /* Stack links vertically */
+    justify-content: center; /* Center items vertically */
+    align-items: center;     /* Center items horizontally */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Full height to cover the entire page */
+    backdrop-filter: blur(15px);
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    z-index: 1000;
+    padding: 15px 30px;
+    box-shadow: none; /* Remove box shadow since it's full-screen */
+}
+
 
     nav .hamburger {
         display: block;
