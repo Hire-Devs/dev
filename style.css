@@ -1,3 +1,5 @@
+
+/* Original CSS content */
 /* Reset */
 * {
     margin: 0;
@@ -215,4 +217,53 @@ footer .social-links a {
     margin: 0 15px;
     color: #61dafb;
     text-decoration: none;
+}
+
+
+/* Responsive Adjustments */
+@media only screen and (max-width: 1200px) {
+    /* Tablet adjustments */
+    nav ul li {
+        margin: 0 10px;
+    }
+    .container {
+        width: 90%;
+        padding: 0 20px;
+    }
+    .content {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    /* Mobile adjustments */
+    nav ul {
+        flex-direction: column;
+    }
+    nav ul li {
+        padding: 10px 0;
+    }
+    .container, .content {
+        width: 100%;
+        padding: 0 10px;
+    }
+    h1, h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    /* Smaller mobile devices */
+    body {
+        font-size: 0.9rem;
+    }
+    .container {
+        padding: 5px;
+    }
+    nav ul li {
+        padding: 5px 0;
+    }
+    h1 {
+        font-size: 1.25rem;
+    }
 }

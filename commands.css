@@ -1,3 +1,5 @@
+
+/* Original CSS content */
 /* Reset */
 * {
     margin: 0;
@@ -181,5 +183,40 @@ footer .social-links a {
     }
     to {
         opacity: 1;
+    }
+}
+
+
+/* Responsive Adjustments */
+@media only screen and (max-width: 1200px) {
+    /* Tablet adjustments */
+    .command-container {
+        padding: 15px;
+    }
+    .command-description {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    /* Mobile adjustments */
+    .command-container {
+        padding: 10px;
+    }
+    .command-title {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    /* Smaller mobile devices */
+    .command-container {
+        padding: 5px;
+    }
+    .command-description {
+        font-size: 0.9rem;
+    }
+    .command-title {
+        font-size: 1.25rem;
     }
 }
