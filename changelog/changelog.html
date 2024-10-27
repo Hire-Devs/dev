@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changelog - Dev Bot</title>
+    <link rel="stylesheet" href="commands.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">Dev Bot</div>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <ul id="nav-links">
+            <li><span class="close-icon" onclick="toggleMenu()">✖</span></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#commands">Commands</a></li>
+            <li><a href="#changelog" class="active">Changelog</a></li>
+            <li><a href="#login" class="lta-button">Login</a></li>
+            <li><a href="https://discord.com/oauth2/authorize?client_id=1296484121673072640&permissions=1126314371565632&integration_type=0&scope=bot+applications.commands" class="cta-button">Invite Bot</a></li>
+        </ul>
+    </nav>
+
+    <!-- Changelog Section -->
+    <main class="documentation">
+        <h1>Changelog</h1>
+        <p>Keep up with the latest updates and improvements to Dev Bot:</p>
+
+        <!-- Changelog Entries -->
+        <section class="changelog-section">
+            <div class="changelog-item">
+                <h3>Version 1.2.0 - October 26, 2024</h3>
+                <ul>
+                    <li>Added new feature for automatic error-solving in coding channels.</li>
+                    <li>Improved performance of the achievement system for smoother user experience.</li>
+                    <li>Fixed minor bugs in profile management commands.</li>
+                </ul>
+            </div>
+            <div class="changelog-item">
+                <h3>Version 1.1.5 - October 18, 2024</h3>
+                <ul>
+                    <li>Enhanced leveling system with new milestones and custom rewards.</li>
+                    <li>Updated database connection for faster retrieval of user profiles.</li>
+                    <li>Improved moderation commands for better handling of multiple server requests.</li>
+                </ul>
+            </div>
+            <div class="changelog-item">
+                <h3>Version 1.1.0 - October 10, 2024</h3>
+                <ul>
+                    <li>Introduced new reaction role commands for easier role management.</li>
+                    <li>Added support for multiple language commands.</li>
+                    <li>Optimized the invite system for quicker bot authorization.</li>
+                </ul>
+            </div>
+            <!-- Add more changelog entries as needed -->
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Dev Bot. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://discord.gg/dn9CqFbuSr">Discord</a>
+            <a href="https://github.com/pgnetwork01">GitHub</a>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Toggle Menu -->
+    <script>
+        function toggleMenu() {
+            const navLinks = document.getElementById("nav-links");
+            navLinks.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>
