@@ -118,10 +118,19 @@
 
     <!-- JavaScript for Toggle Menu -->
     <script>
-        function toggleMenu() {
-            const navLinks = document.getElementById("nav-links");
-            navLinks.classList.toggle("active");
-        }
+       function toggleMenu() {
+    const navLinks = document.getElementById("nav-links");
+    navLinks.classList.toggle("active");
+    
+    // Toggle close icon visibility
+    const closeIcon = document.querySelector(".close-icon");
+    if (navLinks.classList.contains("active")) {
+        closeIcon.style.display = "block";
+    } else {
+        closeIcon.style.display = "none";
+    }
+}
+
     </script>
 </body>
 </html>
