@@ -293,6 +293,42 @@ nav ul.active .close-icon {
     display: block; /* Displayed only when the menu is open */
 }
 
+/* Dropdown */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    min-width: 150px;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    z-index: 1000;
+}
+
+.dropdown-content li {
+    width: 100%;
+}
+
+.dropdown-content li a {
+    display: block;
+    padding: 10px 20px;
+    color: #f0f0f0;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: background-color 0.3s;
+}
+
+.dropdown-content li a:hover {
+    background-color: #61dafb;
+    color: #282c34;
+}
+
 /* Fade-in Animation */
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(10px); }
