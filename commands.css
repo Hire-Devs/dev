@@ -248,7 +248,6 @@ footer {
 
 footer p {
     margin-bottom: 10px;
-    color: #61dafb;
 }
 
 footer .social-links a {
@@ -275,10 +274,9 @@ footer .social-links a:hover {
     font-weight: 1000;
 }
 
-
-.close-icon {
-        display: block;
-    }
+nav ul.active .close-icon {
+    display: block; /* Displayed only when the menu is open */
+}
 
 /* Fade-in Animation */
 @keyframes fadeIn {
