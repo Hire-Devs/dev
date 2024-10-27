@@ -262,6 +262,22 @@ footer .social-links a:hover {
     color: #f0f0f0;
 }
 
+
+/* Close Icon */
+.close-icon {
+    display: none;
+    font-size: 24px;
+    color: #61dafb;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.close-icon {
+        display: block;
+    }
+
 /* Fade-in Animation */
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(10px); }
