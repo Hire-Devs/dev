@@ -267,12 +267,14 @@ footer .social-links a:hover {
 .close-icon {
     display: none;
     font-size: 24px;
-    color: #61dafb;
     cursor: pointer;
     position: absolute;
     top: 20px;
     right: 20px;
+    color: red;
+    font-weight: 1000;
 }
+
 
 .close-icon {
         display: block;
