@@ -13,12 +13,13 @@
     <!-- Navbar -->
     <nav>
         <div class="logo">Dev Bot</div>
-        <ul>
-            <li><a href="index.html#home">Home</a></li>
-            <li><a href="index.html#features">Features</a></li>
-            <li><a href="index.html#commands" class="active">Commands</a></li>
-            <li><a href="index.html#pricing">Pricing</a></li>
-            <li><a href="index.html#login" class="lta-button">Login</a></li>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <ul id="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#commands" class="active">Commands</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#login" class="lta-button">Login</a></li>
             <li><a href="https://discord.com/oauth2/authorize?client_id=1296484121673072640&permissions=1126314371565632&integration_type=0&scope=bot+applications.commands" class="cta-button">Invite Bot</a></li>
         </ul>
     </nav>
@@ -31,7 +32,6 @@
         <!-- Profile Management -->
         <section class="command-section">
             <h2>Profile Management</h2>
-
             <div class="command-item">
                 <h3>Create a Profile</h3>
                 <code>/createprofile &lt;name&gt; &lt;experience&gt; &lt;skills&gt;</code>
@@ -114,5 +114,13 @@
             <a href="https://github.com/pgnetwork01">GitHub</a>
         </div>
     </footer>
+
+    <!-- JavaScript for Toggle Menu -->
+    <script>
+        function toggleMenu() {
+            const navLinks = document.getElementById("nav-links");
+            navLinks.classList.toggle("active");
+        }
+    </script>
 </body>
 </html>
